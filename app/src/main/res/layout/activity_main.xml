@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.fragments.MainActivity"
+    android:orientation="vertical">
+
+    <fragment
+    android:id="@+id/fragRed"
+    android:name="com.example.admin.fragments.RedFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</fragment>
+
+    <Button
+        android:id="@+id/btnAddRedFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btnAddRedFrag"
+        android:onClick="addFragments"/>
+    <Button
+        android:id="@+id/btnAddBlueFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btnAddBluerag"
+        android:onClick="addFragments"/>
+
+
+    <!--send data to red-->
+
+    <EditText
+        android:id="@+id/etDataForRedFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+       android:onClick="sendDataToRedFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_margin="10dp"
+
+        android:id="@+id/flFragHolderRed"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></FrameLayout>
+
+    <FrameLayout
+        android:layout_margin="10dp"
+
+        android:id="@+id/flFragHolderBlue"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Text to be updated from blue fragment"
+        />
+    <TextView
+        android:id="@+id/tvTextFromBlueFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+
+</LinearLayout>
